@@ -82,6 +82,13 @@ body {
     font-size: 20px;
 }
 
+a:hover{
+    background-color: white;
+    border-radius: 50px;
+    border: solid #ffce2c;
+    transform: scale(1.1);
+}
+
 .ulHijo {
     position: absolute;
     background-color: white;
@@ -96,7 +103,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #072227;
-
+    transition: 0.3s;
 }
 
 .ulPadre li:hover .ulHijo {
@@ -197,6 +204,11 @@ footer {
     width: 70px;
     margin-right: 20px;
     margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.whatsapp:hover{
+    transform: scale(1.4);
 }
 
 .parrafo__footer {
