@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link de Css -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- Titulo del tema -->
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img src="../img/logo.jpeg" alt="logo" class="logo">
+            <nav class="nav">
+                <ul class="ulPadre">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="paseos.html">Paseos</a>
+                        <ul class="ulHijo">
+                            <li><a href="">Cayo Sal</a></li>
+                            <li><a href="">Cayo Sombrero</a></li>
+                            <li><a href="">Cayo Pescador</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+            <h1>Contacto</h1>
+            <h3 class="subtitulo__contacto">Completa nuestro formulario para que nuestros asesores te contacten</h3>
+            <form class="formulario">
+                <div class="container__form">
+                    <label for="nombre">Completa tu nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido" required class="input">
+                </div>
+                <div class="container__form">
+                    <label for="email">Completa tu email</label>
+                    <input type="email" name="email" placeholder="Completa tu Email" required class="input">
+                </div>
+                <div class="container__form">
+                    <label for="pais">Seleciona tu Pais</label>
+                    <select name="pais">
+                        <option value="">Selecciona tu Pais</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="venezuela">Venezuela</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+            </form>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="containerFooter">
+                <div class="logoFooter">
+                    <img src="../img/logo.jpeg" alt="logo" class="imagenLogo">
+                </div>
+                <div>
+                    <p class="parrafo__footer">Parque Nacional Morrocoy, Tucacas 4101, Falcón, Venezuela
+                        Horas:
+                        Abierto las 24 horas
+                        Fundación: 23 de Abril de 1999
+                    </p>
+                </div>
+                <div>
+                    <h4 class="suscribete">Suscribete</h4>
+                    <div class="redes">
+                        <img src="../img/instagram.png" alt="instagram" class="instagram">
+                        <img src="../img/facebook.png" alt="facebook" class="facebook">
+                        <img src="../img/twitter.png" alt="twitter" class="twitter">
+                    </div>
+                </div>
+                <img src="../img/whatsapp.png" alt="whatsapp" class="whatsapp">
+            </div>
+            <div>
+                <h4> ©2022 Todos los derechos reservados</h4>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

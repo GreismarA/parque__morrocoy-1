@@ -1,0 +1,557 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* aplicando grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+/* Estilo al Body */
+body {
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    font-family: 'The Nautigal', cursive;
+}
+
+
+/* Estilo al header */
+.logo {
+    width: 240px;
+    height: 200px;
+    margin-left: 25px;
+}
+
+
+/* Estilo al nav */
+.nav {
+    position: fixed;
+    width: 65vw;
+    margin: 20px 265px;
+    background-color: #AEFEFF;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.ulPadre {
+    margin-left: 60px;
+}
+
+.ulPadre>li {
+    position: relative;
+    display: inline-block;
+}
+
+.ulPadre>li>a {
+    display: block;
+    text-decoration: none;
+    color: #072227;
+    padding: 20px;
+    margin: 15px;
+    font-weight: 90px;
+    font-size: 20px;
+}
+
+.ulHijo {
+    position: absolute;
+    background-color: white;
+    display: block;
+    display: none;
+    width: 100%;
+}
+
+.ulHijo li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #072227;
+
+}
+
+.ulPadre li:hover .ulHijo {
+    display: block;
+}
+
+
+/* Estilo Seccion Inicio */
+/* Main */
+h1 {
+    color: white;
+    background-color: #072227;
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.video {
+    width: 100%;
+}
+
+.parrafo {
+    margin: 100px 60px;
+    text-align: center;
+    color: #072227;
+    font-size: 25px;
+    word-spacing: 7px;
+    line-height: 40px;
+}
+
+.bienvenido {
+    margin: 100px 60px 50px 60px;
+    text-align: center;
+    color: #072227;
+    font-size: 35px;
+    word-spacing: 7px;
+    background-color: #AEFEFF;
+    border-radius: 100px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container__imagen {
+    margin-top: 120px;
+}
+
+.container__text {
+    margin: 150px 250px;
+    font-size: 25px;
+    color: #072227;
+    text-align: center;
+}
+
+.tortuga {
+    width: 150px;
+    margin-top: 110px;
+    margin-left: 60px;
+
+}
+
+.sombrilla {
+    width: 150px;
+    margin-left: 60px;
+    margin-bottom: 110px;
+}
+
+.imagen {
+    width: 500px;
+    height: 400px;
+    margin: 50px 200px;
+    border-radius: 50px;
+}
+
+
+/* Estilo Footer */
+footer {
+    color: #AEFEFF;
+    background-color: #072227;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 100px 15px 100px;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Img whatsapp */
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.parrafo__footer {
+    color: #AEFEFF;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 80px 95px 0px 120px
+}
+
+.logoFooter {
+    margin: 0px 300px 0 0px;
+    width: 0px
+}
+
+.imagenLogo {
+    width: 200px;
+    border-radius: 50px;
+
+}
+
+.suscribete {
+    margin: 100px 150px;
+
+}
+
+.instagram {
+    width: 40px;
+    margin: 5px;
+
+}
+
+.facebook {
+    width: 40px;
+    margin: 5px;
+}
+
+.twitter {
+    width: 40px;
+    margin: 5px;
+}
+
+
+/* Estilo Seccion nosotros */
+.imgNosotros {
+    width: 700px;
+    height: 800px;
+    margin: 50px 400px;
+    border-radius: 50px;
+}
+
+.imgPaseo {
+    width: 700px;
+    height: 600px;
+    margin: 50px 400px;
+    border-radius: 50px;
+}
+
+
+/* Estilo Seccion Paseos */
+.cayos {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 40px;
+}
+
+.texto__cayos {
+    margin: 0px 120px;
+}
+
+.subtitulo__cayos {
+    color: #072227;
+    font-size: 30px;
+    font-style: italic;
+    margin: 10px;
+    background-color: #AEFEFF;
+    border-radius: 30px;
+}
+
+.parrafo__cayos {
+    color: #072227;
+    font-size: 18px;
+    margin: 40px 10px;
+    text-align: justify;
+    line-height: 35px;
+    word-spacing: 18px;
+}
+
+.img__cayos {
+    width: 500px;
+    border-radius: 40px;
+}
+
+
+/* Estilo Seccion Contacto */
+.subtitulo__contacto {
+    text-align: center;
+    margin: 50px;
+    font-size: 25px;
+}
+
+.formulario {
+    background-color: #AEFEFF;
+    width: 900px;
+    height: 350px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+.container__form {
+    margin: 40px 230px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.input {
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+select {
+    margin-left: 20px;
+    height: 25px;
+}
+
+.enviar {
+    background-color: #072227;
+    width: 400px;
+    block-size: 30px;
+    color: #AEFEFF;
+    margin-left: 245px;
+}
+
+.enviar:hover {
+    background-color: white;
+}
+
+/* Aqui van las medias queries */
+/* Media queries tablet */
+@media (max-width: 1024px) and (min-width: 600px) {
+
+    /* Seccion Inicio */
+    .nav {
+        width: 70%;
+        height: 100px;
+        margin: 20px 0px 20px 200px;
+
+    }
+
+    .ulPadre>li>a {
+        padding: 0;
+        margin: 30px 10px;
+    }
+
+    .logo {
+        width: 17%;
+    }
+
+    .main {
+        width: 63.6em;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .imagen {
+        margin: 50px 30px;
+        width: 400px;
+    }
+
+    .suscribete {
+        margin: 50px 0;
+    }
+
+    .parrafo__footer {
+        margin: 80px 217px 0px 0px;
+    }
+
+    .texto {
+        font-size: 1.3rem;
+        margin-right: 80px;
+    }
+
+    .sombrilla {
+        margin-right: 100px;
+    }
+
+    .tortuga {
+        margin-right: 100px;
+    }
+
+    /* Seccion Nosotros */
+    .imgNosotros {
+        margin: 5px 0 5px 200px;
+    }
+
+
+    /* Seccion paseo */
+    .imgPaseo {
+        margin: 5px 0 5px 200px;
+    }
+
+    .img__cayos {
+        height: 350px;
+    }
+
+    .parrafo__cayos {
+        word-spacing: 0.1rem;
+    }
+
+
+}
+
+
+/* Media queries mobile */
+@media (max-width: 599px) and (min-width: 320px) {
+
+    /* Seccion inicio */
+    .nav {
+        width: 70%;
+        height: 100px;
+        margin: 20px 0px 20px 200px;
+
+    }
+
+    .ulPadre>li>a {
+        padding: 0;
+        margin: 30px 10px;
+    }
+
+    .logo {
+        width: 17%;
+    }
+
+    .main {
+        width: 63.6em;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .imagen {
+        margin: 50px 30px;
+        width: 400px;
+    }
+
+    .suscribete {
+        margin: 50px 0;
+    }
+
+    .texto {
+        font-size: 1.3rem;
+        margin-right: 80px;
+    }
+
+    .sombrilla {
+        margin-right: 100px;
+    }
+
+    .tortuga {
+        margin-right: 100px;
+    }
+
+    .parrafo__footer {
+        margin: 80px 217px 0px 0px;
+    }
+
+    /* Seccion Nosotros */
+    .parrafo {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .imgNosotros {
+        margin: 5px 0 5px 170px;
+    }
+
+    /* Seccion Paseos */
+    .imgPaseo {
+        margin: 5px 0 5px 170px;
+    }
+
+    .img__cayos {
+        height: 350px;
+        margin-top: 150px;
+    }
+
+    .texto__cayos {
+        margin: 0 30px;
+    }
+
+    .parrafo__cayos {
+        font-size: 1.8rem;
+        word-spacing: 0.1rem;
+        line-height: 3rem;
+    }
+
+
+    /* Seccion Contacto */
+    .subtitulo__contacto {
+        font-size: 2.3rem;
+        margin: 120px 20px;
+    }
+
+    .formulario {
+        height: 800px;
+        padding-bottom: 30px;
+        margin-bottom: 100px;
+    }
+
+    label {
+        font-size: 2rem;
+        word-spacing: 0.5rem;
+    }
+
+    .input {
+        width: 230px;
+        height: 55px;
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
+    select {
+        width: 230px;
+        height: 55px;
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
+    .enviar {
+        width: 450px;
+        block-size: 65px;
+        font-size: 2rem;
+    }
+
+
+    /* Seccion Recomendaciones */
+    .recomendaciones p {
+        font-size: 2.5rem;
+        line-height: 5rem;
+        margin: 150px 60px;
+    }
+}
